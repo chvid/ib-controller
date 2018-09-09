@@ -40,31 +40,26 @@
             <groupId>com.interactivebrokers.tws</groupId>
             <artifactId>twslaunch-install4j</artifactId>
             <version>972</version>
-            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>com.interactivebrokers.tws</groupId>
             <artifactId>locales</artifactId>
             <version>972</version>
-            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>com.interactivebrokers.tws</groupId>
             <artifactId>jts4launch</artifactId>
             <version>972</version>
-            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>com.interactivebrokers.tws</groupId>
             <artifactId>twslaunch</artifactId>
             <version>972</version>
-            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>com.interactivebrokers.tws</groupId>
             <artifactId>total-2018</artifactId>
             <version>972</version>
-            <scope>provided</scope>
         </dependency>
         <dependency>
 >>>>>>> 10a3997... Basic test case.
@@ -74,4 +69,18 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>3.1.0</version>
+                <configuration>
+                    <descriptors>
+                        <descriptor>src/main/assembly/distribution.xml</descriptor>
+                    </descriptors>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
