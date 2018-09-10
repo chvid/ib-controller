@@ -1,6 +1,5 @@
 target
-dist
-nbproject
 .*
 *.iml
 work
+repository/*
